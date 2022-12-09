@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Listitem = ({itemname, className}) => {
+const Listitem = ({ itemname, className, href }) => {
   return (
-    <li className={className}>{itemname}</li>
-  )
-}
+    <li className={className}>
+      <Link to={href}>{itemname}</Link>
+    </li>
+  );
+};
 
-export default Listitem
+export default Listitem;

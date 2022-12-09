@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Container from "./Container";
 import Flex from "./Flex";
 import Image from "./Image";
 import List from "./List";
@@ -6,7 +7,7 @@ import Listitem from "./Listitem";
 import { BsList } from "react-icons/bs";
 
 const Navbar = () => {
-    let [show, setShow] = useState(true);
+  let [show, setShow] = useState(true);
 
   useEffect(() => {
     function scrollWidth() {
@@ -22,7 +23,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav>
-      <div className=" max-w-container mx-auto p-2.5 ">
+      <Container className=" max-w-container mx-auto p-2.5 ">
         <Flex className="lg:flex items-center">
           <div className="lg:w-3/12">
             <Image imgsrc="assets/images/logo.png" />
@@ -58,9 +59,9 @@ const Navbar = () => {
             )}
           </div>
         </Flex>
-      </div>
+      </Container>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
