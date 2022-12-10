@@ -51,11 +51,11 @@ const Header = () => {
               <p className="flex cursor-pointer items-center gap-x-2.5">
                 <BsFilterLeft className="text-xl" />
                 <h6 className="font-regular font-dm text-sm text-[#262626]">
-                  Shop by Category
+                  <span className="hidden lg:inline-block">Shop by Category</span>
                 </h6>
               </p>
               {categoryDropShow && (
-                <List className="font-regular absolute mt-2.5 w-[263px] bg-primary font-dm">
+                <List className="font-regular absolute mt-4 w-[263px] bg-primary font-dm">
                   <Listitem
                     className="border-b border-solid border-[#2d2d2d] py-4 px-5 font-dm text-sm text-[#c4c4c4] duration-200 ease-in-out hover:px-8 hover:font-bold hover:text-white"
                     itemname="Accesories"
@@ -84,7 +84,7 @@ const Header = () => {
               )}
             </Dropdown>
           </div>
-          <div className="relative w-[601px]">
+          <div className="relative w-auto md:w-[601px]">
             <Search
               className=" font-regular w-full py-4 px-5 font-dm text-sm placeholder:text-[#c4c4c4]"
               placeholder="Search Products"
@@ -99,7 +99,7 @@ const Header = () => {
                   <GoTriangleDown className="text-sm text-[#262626]" />
                 </div>
                 {userDropShow && (
-                  <List className="font-regular absolute top-6 right-16 mt-2.5 w-[200px] bg-white font-dm">
+                  <List className="font-regular absolute top-6 right-16 mt-3 w-[200px] bg-white font-dm">
                     <Listitem
                       className="flex justify-center border border-solid border-[#F0F0F0] py-4 px-5 font-dm text-sm text-[#262626] hover:bg-[#262626] hover:font-bold hover:text-white"
                       itemname="My Account"
