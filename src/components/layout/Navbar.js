@@ -22,37 +22,37 @@ const Navbar = () => {
     window.addEventListener("resize", scrollWidth);
   }, []);
   return (
-    <nav>
-      <Container className=" max-w-container mx-auto p-2.5 ">
-        <Flex className="lg:flex items-center">
+    <nav className="py-7" >
+      <Container className=" mx-auto max-w-container p-2.5 ">
+        <Flex className="items-center lg:flex">
           <div className="lg:w-3/12">
             <Image imgsrc="assets/images/logo.png" />
           </div>
           <div className="lg:w-9/12">
             <BsList
               onClick={() => setShow(!show)}
-              className=" block lg:hidden ml-auto text-2xl cursor-pointer absolute top-2 right-0"
+              className=" absolute top-6 right-2 ml-auto block cursor-pointer text-2xl lg:hidden"
             />
             {show && (
-              <List className="lg:flex lg:justify-end lg:gap-x-10 mt-2 lg:mt-0 ">
+              <List className="mt-2 lg:mt-0 lg:flex lg:justify-end lg:gap-x-10 ">
                 <Listitem
-                  className="font-dm font-bold text-sm hover:font-bold text-[#767676] cursor-pointer my-3 lg:my-0"
+                  className="my-3 cursor-pointer font-dm text-sm font-bold text-[#767676] hover:font-bold lg:my-0"
                   itemname="Home"
                 />
                 <Listitem
-                  className="font-dm font-regular text-sm hover:font-bold text-[#767676] cursor-pointer my-3 lg:my-0"
+                  className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"
                   itemname="Shop"
                 />
                 <Listitem
-                  className="font-dm font-regular text-sm hover:font-bold text-[#767676] cursor-pointer my-3 lg:my-0"
+                  className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"
                   itemname="About"
                 />
                 <Listitem
-                  className="font-dm font-regular text-sm hover:font-bold text-[#767676] cursor-pointer my-3 lg:my-0"
+                  className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"
                   itemname="Contact"
                 />
                 <Listitem
-                  className="font-dm font-regular text-sm hover:font-bold text-[#767676] cursor-pointer my-3 lg:my-0"
+                  className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"
                   itemname="Journal"
                 />
               </List>
