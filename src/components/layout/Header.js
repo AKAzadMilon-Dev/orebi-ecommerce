@@ -47,7 +47,7 @@ const Header = () => {
       <Container>
         <Flex className="flex justify-between ">
           <div className="flex items-center">
-            <Dropdown dropref={categoryRef}>
+            <Dropdown className="z-50" dropref={categoryRef}>
               <p className="flex cursor-pointer items-center gap-x-2.5">
                 <BsFilterLeft className="text-xl" />
                 <h6 className="font-regular font-dm text-sm text-[#262626]">
@@ -93,7 +93,7 @@ const Header = () => {
           </div>
           <div className="flex items-center">
             <div className="flex gap-x-10 relative ">
-              <Dropdown dropref={userRef}>
+              <Dropdown className="z-50" dropref={userRef}>
                 <div className="flex cursor-pointer items-center gap-x-2">
                   <FaUser className="text-[#262626]" />
                   <GoTriangleDown className="text-sm text-[#262626]" />
@@ -112,7 +112,7 @@ const Header = () => {
                 )}
               </Dropdown>
               <div>
-                <Dropdown className="relative" dropref={cartRef}>
+                <Dropdown className="relative z-50" dropref={cartRef}>
                   <FaShoppingCart className="cursor-pointer text-xl text-[#262626]" />
                   {cartDropShow && (
                     <div className="absolute top-9 right-2 w-[360px] border border-solid border-[#F0F0F0] ">
