@@ -51,16 +51,57 @@ const Banner = () => {
         0{i + 1}
       </div>
     ),
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          dots: true,
+          appendDots: (dots) => (
+            <div
+              style={{
+                position: "absolute",
+                top: "25%",
+                left: "2%",
+              }}
+            >
+              <ul style={{ margin: "0px" }}> {dots} </ul>
+            </div>
+          ),
+          customPaging: (i) => (
+            <div
+              style={
+                i === dotsActive
+                  ? {
+                      width: "30px",
+                      color: "#262626",
+                      borderRight: "3px #262626 solid",
+                      cursor: "pointer",
+                    }
+                  : {
+                      width: "30px",
+                      color: "#262626",
+                      borderRight: "3px white solid",
+                      color: "transparent",
+                      cursor: "pointer",
+                    }
+              }
+            >
+              0{i + 1}
+            </div>
+          ),
+        }
+      }
+    ]
   };
   return (
     <Slider {...settings}>
-      <div>
+      <div className=" outline-none ">
         <Image imgsrc="assets/images/banner.png" />
       </div>
-      <div>
+      <div className=" outline-none ">
         <Image imgsrc="assets/images/banner.png" />
       </div>
-      <div>
+      <div className=" outline-none ">
         <Image imgsrc="assets/images/banner.png" />
       </div>
     </Slider>
