@@ -95,13 +95,13 @@ const Banner = () => {
   };
   return (
     <Slider {...settings}>
-      <div className=" outline-none ">
+      <div className=" outline-none w-full ">
         <Image imgsrc="assets/images/banner.png" />
       </div>
-      <div className=" outline-none ">
+      <div className=" outline-none w-full ">
         <Image imgsrc="assets/images/banner.png" />
       </div>
-      <div className=" outline-none ">
+      <div className=" outline-none w-full ">
         <Image imgsrc="assets/images/banner.png" />
       </div>
     </Slider>
