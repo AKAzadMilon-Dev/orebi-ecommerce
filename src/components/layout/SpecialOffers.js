@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 
-const Bestsellers = () => {
+const SpecialOffers = () => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -34,6 +34,7 @@ const Bestsellers = () => {
   }
 
   const settings = {
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -45,23 +46,23 @@ const Bestsellers = () => {
   return (
     <div className="mt-14 md:mt-32">
       <Container>
-        <Heading title="Our Bestsellers" />
+        <Heading title="Special Offers" />
         {/* <Flex className="sm:flex sm:max-lg:flex-wrap sm:max-lg:justify-between md:gap-x-10"> */}
         <Slider {...settings}>
           <div className="md:max-lg-w-[340px] sm:max-w-[300px] lg:max-w-[370px]">
-            <Product src="assets/images/best1.png" badge={true} />
+            <Product src="assets/images/offer1.png" badge={true} />
           </div>
           <div className="md:max-lg-w-[340px] sm:max-w-[300px] lg:max-w-[370px]">
-            <Product src="assets/images/best2.png" badge={true} />
+            <Product src="assets/images/offer2.png" badge={true} />
           </div>
           <div className="md:max-lg-w-[340px] sm:max-w-[300px] lg:max-w-[370px]">
-            <Product src="assets/images/best3.png" badge={true} />
+            <Product src="assets/images/offer3.png" badge={true} />
           </div>
           <div className="md:max-lg-w-[340px] sm:max-w-[300px] lg:max-w-[370px]">
-            <Product src="assets/images/best2.png" badge={true} />
+            <Product src="assets/images/offer2.png" badge={true} />
           </div>
           <div className="md:max-lg-w-[340px] sm:max-w-[300px] lg:max-w-[370px]">
-            <Product src="assets/images/best4.png" badge={true} />
+            <Product src="assets/images/offer4.png" badge={true} />
           </div>
         </Slider>
         {/* </Flex> */}
@@ -70,4 +71,4 @@ const Bestsellers = () => {
   );
 };
 
-export default Bestsellers;
+export default SpecialOffers;

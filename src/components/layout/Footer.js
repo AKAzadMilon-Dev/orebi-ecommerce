@@ -124,9 +124,9 @@ const Footer = () => {
         <Flex className="flex">
           <div className="mt-14 flex w-full items-center">
             <div className="flex w-1/2 items-center gap-x-3">
-              <RiFacebookFill className="h-4 w-4 text-primary" />
-              <RiLinkedinFill className="h-4 w-4 text-primary" />
-              <RiInstagramLine className="h-4 w-4 text-primary" />
+              <RiFacebookFill className="h-4 w-4 text-primary cursor-pointer" />
+              <RiLinkedinFill className="h-4 w-4 text-primary cursor-pointer" />
+              <RiInstagramLine className="h-4 w-4 text-primary cursor-pointer" />
             </div>
             <div className="flex w-1/2 justify-end">
               <p className="font-regular font-dm text-sm text-[#6D6D6D]">

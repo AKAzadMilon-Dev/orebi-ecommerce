@@ -5,6 +5,7 @@ import Advertisement from "../components/layout/Advertisement";
 import Banner from "../components/layout/Banner";
 import Bestsellers from "../components/layout/Bestsellers";
 import Newarrivals from "../components/layout/Newarrivals";
+import SpecialOffers from "../components/layout/SpecialOffers";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Newarrivals/>
       <Bestsellers/>
       <Advertisement/>
+      <SpecialOffers/>
     </>
   );
 };

@@ -7,7 +7,7 @@ const Advertisement = () => {
   return (
     <div className="mt-32">
       <Container>
-        <Link>
+        <Link to="#">
           <Image imgsrc="assets/images/advertisement.png" />
         </Link>
       </Container>
