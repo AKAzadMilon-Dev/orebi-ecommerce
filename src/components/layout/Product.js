@@ -9,7 +9,7 @@ const Product = ({ src, badge }) => {
   return (
     <div className="mb-5 md:mb-0">
       <div className="group relative overflow-y-hidden">
-        <Image imgsrc={src} />
+        <Image className="w-full" imgsrc={src} />
         {badge && <Badge title="New" />}
         <div className="absolute bottom-[-46%] lg:max-xl:bottom-[-73%] left-0 h-[156px] w-full bg-white duration-300 ease-in-out group-hover:bottom-0 ">
           <Flex className="mt-0 flex justify-end px-7 md:mt-5">
@@ -40,7 +40,7 @@ const Product = ({ src, badge }) => {
       </div>
       <div>
         <div className="mt-6 mb-4 flex items-center justify-between">
-          <h3 className="font-dm text-xl font-bold text-primary lg:max-xl:text-sm">
+          <h3 className="font-dm md:text-base lg:text-xl text-regular font-bold text-primary lg:max-xl:text-sm">
             Basic Crew Neck Tee
           </h3>
           <p className="font-regular font-dm text-[#767676] lg:max-xl:text-sm">
