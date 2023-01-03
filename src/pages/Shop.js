@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BreadCrumb from "../components/layout/BreadCrumb";
 import Container from "../components/layout/Container";
 import Flex from "../components/layout/Flex";
-import LeftSidwBar from "../components/layout/LeftSidwBar";
+import LeftSidwBar from "../components/layout/LeftSideBar";
 import Pagination from "../components/layout/Pagination";
 
 const Shop = () => {
