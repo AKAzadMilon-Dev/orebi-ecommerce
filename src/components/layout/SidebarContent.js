@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { VscTriangleDown } from "react-icons/vsc";
+import LeftSidebarItem from "./LeftSidebarItem";
 
 const SidebarContent = ({ dropDown }) => {
   const [drop, setDrop] = useState(dropDown);
@@ -9,7 +10,7 @@ const SidebarContent = ({ dropDown }) => {
       {drop ? (
         <div
           onClick={() => setShow(!show)}
-          className="flex items-center justify-between cursor-pointer"
+          className="flex cursor-pointer items-center justify-between"
         >
           <h3>Shop by Category</h3>
           <VscTriangleDown />
@@ -19,13 +20,11 @@ const SidebarContent = ({ dropDown }) => {
       )}
       {show && (
         <div>
-          <p>Category 1</p>
-          <p>Category 1</p>
-          <p>Category 1</p>
-          <p>Category 1</p>
-          <p>Category 1</p>
-          <p>Category 1</p>
-          <p>Category 1</p>
+          <LeftSidebarItem />
+          <LeftSidebarItem />
+          <LeftSidebarItem />
+          <LeftSidebarItem />
+          <LeftSidebarItem />
         </div>
       )}
     </div>
