@@ -18,6 +18,7 @@ const LeftSidebarItem = (props) => {
                 style={{ background: props.color }}
               ></span>
             )}
+            
             {props.title}
           </h3>
           {show ? (
