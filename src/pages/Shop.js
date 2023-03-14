@@ -15,7 +15,7 @@ const Shop = () => {
     <Container>
       <BreadCrumb />
       <Flex className="mt-28 gap-x-10 md:flex ">
-        <div className="bg-orange-500 md:w-1/4">
+        <div className="md:w-1/4">
           <LeftSidwBar/>
         </div>
         <div className="relative md:w-3/4">
