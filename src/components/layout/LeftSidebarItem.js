@@ -9,7 +9,7 @@ const LeftSidebarItem = (props) => {
       {drop ? (
         <div
           onClick={() => setShow(!show)}
-          className="mb-5 flex cursor-pointer items-center justify-between border-b border-solid border-[#F0F0F0] py-5"
+          className="flex cursor-pointer items-center justify-between border-b border-solid border-[#F0F0F0] py-5"
         >
           <h3 className="forn-regular cursor-pointer font-dm text-base text-textColor">
             {props.color && (
@@ -18,7 +18,7 @@ const LeftSidebarItem = (props) => {
                 style={{ background: props.color }}
               ></span>
             )}
-            
+
             {props.title}
           </h3>
           {show ? (
@@ -28,9 +28,18 @@ const LeftSidebarItem = (props) => {
           )}
         </div>
       ) : (
-        <h3 className=" font-regular cursor-pointer border-b border-solid border-[#F0F0F0] py-5 font-dm text-base text-textColor">
-          {props.title}
-        </h3>
+        <div className="flex cursor-pointer items-center justify-between border-b border-solid border-[#F0F0F0] py-5">
+          <h3 className="forn-regular cursor-pointer font-dm text-base text-textColor">
+            {props.color && (
+              <span
+                className="mr-2 inline-block h-3 w-3 rounded-full"
+                style={{ background: props.color }}
+              ></span>
+            )}
+
+            {props.title}
+          </h3>
+        </div>
       )}
       {show && <div>{props.children}</div>}
     </div>

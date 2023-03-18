@@ -38,14 +38,17 @@ const Navbar = () => {
                 <Listitem
                   className="my-3 cursor-pointer font-dm text-sm font-bold text-[#767676] hover:font-bold lg:my-0"
                   itemname="Home"
+                  href="/"
                 />
                 <Listitem
                   className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"
                   itemname="Shop"
+                  href="/product"
                 />
                 <Listitem
                   className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"
                   itemname="About"
+                  href="/about"
                 />
                 <Listitem
                   className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"

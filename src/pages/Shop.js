@@ -16,7 +16,7 @@ const Shop = () => {
       <BreadCrumb />
       <Flex className="mt-28 gap-x-10 md:flex ">
         <div className="md:w-1/4">
-          <LeftSidwBar/>
+          <LeftSidwBar />
         </div>
         <div className="relative md:w-3/4">
           <div className="mb-10 flex justify-end gap-x-10">
