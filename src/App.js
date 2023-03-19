@@ -5,6 +5,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Rootlayout from "./components/layout/Rootlayout";
+import Login from "./components/user/Login";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -16,6 +17,7 @@ let router = createBrowserRouter(
     <Route path="/product" element={<Shop/>}/>
     <Route path="/about" element={<About/>}/>
     <Route path="/contact" element={<Contact/>}/>
+    <Route path="/login" element={<Login/>}/>
   </Route>)
 );
 
