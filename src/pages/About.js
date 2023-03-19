@@ -10,10 +10,10 @@ const About = () => {
       <Container>
         <BreadCrumb />
         <Flex className="mt-28 gap-x-10 md:flex">
-          <div className="w-[2/4] cursor-pointer mb-8 md:mb-0">
+          <div className="w-2/4 cursor-pointer mb-8 md:mb-0">
             <Image className="w-full" imgsrc="assets/images/aboutimg.png" />
           </div>
-          <div className="w-[2/4] cursor-pointer">
+          <div className="w-2/4 cursor-pointer">
             <Image className="w-full" imgsrc="assets/images/aboutimg1.png" />
           </div>
         </Flex>

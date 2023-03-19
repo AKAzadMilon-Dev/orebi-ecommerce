@@ -22,7 +22,7 @@ const Navbar = () => {
     window.addEventListener("resize", scrollWidth);
   }, []);
   return (
-    <nav className="py-7" >
+    <nav className="py-7">
       <Container className=" mx-auto max-w-container p-2.5 ">
         <Flex className="items-center lg:flex">
           <div className="lg:w-3/12">
@@ -53,6 +53,7 @@ const Navbar = () => {
                 <Listitem
                   className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"
                   itemname="Contact"
+                  href="/contact"
                 />
                 <Listitem
                   className="font-regular my-3 cursor-pointer font-dm text-sm text-[#767676] hover:font-bold lg:my-0"
